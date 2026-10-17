@@ -1,6 +1,6 @@
 "use strict";
 
-// Only the product gallery needs script; content and navigation are static.
+// Gallery and disclosure interactions. Language preference is handled by locale.js.
 const tabs = [...document.querySelectorAll('[role="tab"]')];
 function selectTab(tab, focus = false) {
   for (const item of tabs) {

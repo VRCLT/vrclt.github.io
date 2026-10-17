@@ -2,7 +2,8 @@
 
 [vrclt.github.io](https://vrclt.github.io/)
 
-Static pages in English, Korean, Japanese and Simplified Chinese.
+Static pages in English, Korean, Japanese, Simplified Chinese and Traditional Chinese.
+The root detects the browser language; explicit language choices are remembered locally.
 v1.0 is a preview; downloads link to the latest published release.
 
 [Application source and downloads](https://github.com/shgeum/VRCLT)
