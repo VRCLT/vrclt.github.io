@@ -4,6 +4,7 @@
 (() => {
   const supported = new Set(["en", "ko", "ja", "zh", "zh-hant"]);
   const preferenceKey = "vrclt.site.language";
+  const version = document.documentElement.getAttribute("data-site-version");
 
   function matchLanguage(language) {
     const parts = String(language).toLowerCase().replaceAll("_", "-").split("-");
@@ -29,7 +30,15 @@
     const destination = new URL(`${preferred}/`, location.href);
     destination.search = location.search;
     destination.hash = location.hash;
+    if (version) destination.searchParams.set("v", version);
     location.replace(destination.href);
+  } else if (version) {
+    // Fetch the new document with a versioned URL, then keep the address tidy.
+    const current = new URL(location.href);
+    if (current.searchParams.get("v") === version) {
+      current.searchParams.delete("v");
+      history.replaceState(history.state, "", current.href);
+    }
   }
 
   document.addEventListener("click", event => {
