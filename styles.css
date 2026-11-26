@@ -1,5 +1,5 @@
-@font-face{font-family:VRCLT Sans;src:url('./assets/vrclt-sans-regular.woff2?v=acc6d4834fc1') format('woff2');font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:VRCLT Sans;src:url('./assets/vrclt-sans-bold.woff2?v=99ffa54fb025') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:VRCLT Sans;src:url('./assets/vrclt-sans-regular.woff2?v=ca9a7fd17d6a') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:VRCLT Sans;src:url('./assets/vrclt-sans-bold.woff2?v=a84a852ba93c') format('woff2');font-style:normal;font-weight:700;font-display:swap}
 
 :root{--paper:#f1f3f2;--ink:#17232c;--muted:#53616c;--line:#c6cfd3;--blue:#8cc8f2;--cover:#d1dee7;--dark:#18252f;--body:'VRCLT Sans','Malgun Gothic',sans-serif;--mono:'Cascadia Code',Consolas,monospace;color:var(--ink);background:var(--paper);font-family:var(--body);font-size:16px;line-height:1.7;font-synthesis:none}
 *{box-sizing:border-box}
